@@ -1,0 +1,29 @@
+#top
+
+#htop
+sudo dnf install htop
+
+# ps
+# ps -A
+# ps -A | less  **you need to press 'q' to quit
+# ps -A | grep firefox
+
+# pstree
+
+# kill        **The kill command can kill a process, given its process ID. You can get this information from the ps -A, top or pgrep commands.
+
+# kill PID
+
+# pgrep       **Given a search term, pgrep returns the process IDs that match it. For example, you could use the following command to find Firefox’s PID:
+# pgrep firefox
+# kill $(pgrep firefox)
+
+# pkill
+# killall
+
+# renice        ** to set priority: -19 very high ; 19 very low ; 0 default 
+# renice 19 PID
+**If you’re making a process run at a higher priority, you’ll require root permissions. On Ubuntu, use sudo for that:
+# sudo renice -19 PID
+
+# xkill
